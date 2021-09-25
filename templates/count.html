@@ -1,3 +1,16 @@
 <h1>There are {{ count }} words in your text</h1>
+<a href="{% url 'home' %}">Reset</a>
 <h1>Your Text:</h1>
-{{ fulltext }}
+
+{{ fulltext }} <!that how we print any thing from python in html {{ x }} >
+
+<h1>Word Count:</h1>
+
+  {% for word, counttotal in sortedword %}   <!for loop to iterate through dictionary>
+
+<strong>{{ word }}</strong>  : {{ counttotal }}<br>
+
+<! word=key of dictionary"worddictionary" or words in a passage>
+<! counttota=values of dictionary or how many times word has been repeated>
+
+{% endfor %}

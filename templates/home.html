@@ -1,6 +1,8 @@
 This is a word count website!
 <h1>WORD COUNT</h1>
-<form action="{% url 'count' %}">
+<a href="{% url 'about' %}">About Us</a>
+<br>
+<br><form action="{% url 'count' %}">
   <textarea cols="40" rows="5" name="fulltext"></textarea>
   <br>
   <input type="submit" value="Count!" />
